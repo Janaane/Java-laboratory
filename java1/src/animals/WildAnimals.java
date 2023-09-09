@@ -1,9 +1,7 @@
 package animals;
-
 public abstract class WildAnimals extends Animal {
     private String habitat;
     static private int wildCount;
-
     public WildAnimals(String name, int maxRun, int maxSwim, int age, String habitat){
         super(name, maxRun, maxSwim, age);
         this.habitat = habitat;
@@ -14,6 +12,5 @@ public abstract class WildAnimals extends Animal {
     }
     public String getHabitat(){
         return habitat;
-        //System.out.println(getName() + " - " + habitat.toLowerCase());
     }
 }

@@ -32,7 +32,7 @@ public class Main {
         for (Animal i : animals) {
             i.swim(400);
         }
-        System.out.println(animals[8].getName() +" " + (((WildAnimals) animals[8]).getHabitat()));
+        System.out.println(animals[8].getName() + " " + (((WildAnimals) animals[8]).getHabitat()));
 
     }
 }
