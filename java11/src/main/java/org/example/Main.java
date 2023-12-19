@@ -86,15 +86,6 @@ public class Main {
         session.getTransaction().commit();
     }
 
-//    public static void showProducts3(SessionFactory factory, int idBuyer) {
-//        Session session = factory.getCurrentSession();
-//        session.beginTransaction();
-//        Purchase purchase = session.get(Purchase.class, idBuyer);
-//        System.out.println("Список товаров, который покупал(а) " + purchase.getBuyer().getName() + ":");
-//        System.out.println(purchase);
-//        session.getTransaction().commit();
-//    }
-
     public static void findPersons2(SessionFactory factory, String product) {
         System.out.println("Список покупателей, которые приобрели " + product + ":");
         Session session = factory.getCurrentSession();
