@@ -70,8 +70,8 @@ public class Main {
         Session session = factory.getCurrentSession();
         session.beginTransaction();
         Buyers buyer = session.get(Buyers.class, buyerId);
-        System.out.println("Список товаров, который покупал(а) " + buyer);
         if (buyer != null) {
+            System.out.println("Список товаров, который покупал(а) " + buyer);
             List<Purchase> purchases = buyer.getPurchases();
             if (!purchases.isEmpty()) {
                 for (Purchase p : purchases) {
