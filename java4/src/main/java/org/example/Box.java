@@ -14,15 +14,11 @@ public class Box<T extends Fruit> {
 
     public void add(int count) {
         for (int i = 0; i < count; i++) {
-            if(list instanceof Apple){
-                list.add((T) new Apple());
-
+            try {
+                list.add((T) list.get(0).getClass().newInstance());
+            } catch (InstantiationException | IllegalAccessException e){
+                e.printStackTrace();
             }
-            else {
-                list.add((T) new Orange());
-
-            }
-
         }
     }
 
